@@ -10,3 +10,29 @@
 \linespread{1.5}
 % URL
 \usepackage{hyperref}
+% Multiple columns
+\usepackage{multicol}
+% CSV tables
+\usepackage{csvsimple,booktabs,longtable}
+% Define a command to read in CSVs (filename, caption, label)
+\newcommand{\csvtable}[3]{
+  \csvreader[
+    longtable=ll|l,
+    table head=
+      \caption{#2}
+      \label{#3}\\
+      \toprule
+      \bfseries From & \bfseries To & \bfseries Frequency \\
+      \midrule
+      \endfirsthead
+      \caption*{Table \ref{#3} (\textit{continued from Page~\pageref{#3}}): #2}\\\toprule
+      \bfseries From & \bfseries To & \bfseries Frequency \\
+      \midrule
+      \endhead
+      \bottomrule
+      \textit{Continued on next page...}
+      \endfoot
+      \bottomrule
+      \endlastfoot
+  ]{#1}{1=\From,2=\To, 3=\Frequency}{\From & \To & \Frequency}
+}
