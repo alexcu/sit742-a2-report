@@ -10,8 +10,8 @@
 \linespread{1.5}
 % URL
 \usepackage{hyperref}
-% Multiple columns
-\usepackage{multicol}
+% Page rotation
+\usepackage{pdflscape}
 % CSV tables
 \usepackage{csvsimple,booktabs,longtable}
 % Define a command to read in CSVs (filename, caption, label)
@@ -35,4 +35,16 @@
       \bottomrule
       \endlastfoot
   ]{#1}{1=\From,2=\To, 3=\Frequency}{\From & \To & \Frequency}
+}
+% Define a command to import the dot figure
+\newcommand{\dotfigure}[2]{
+  \newpage
+  \begin{figure}[p]
+    \centering
+    \includegraphics[width=\textwidth]{figs/digraphs/#1}
+    \caption{#2. Refer to Table~\ref{tbl:#1} for frequency pattern interactions.}
+    \label{fig:#1}
+  \end{figure}
+  \clearpage
+  \newpage
 }
