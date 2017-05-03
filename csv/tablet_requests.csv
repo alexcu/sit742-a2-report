@@ -1,0 +1,23 @@
+From,To,Frequency
+offers,dining,1013
+default,dining,724
+rooms,offers,723
+facilities,dining,670
+facilities,offers,598
+facilities,rooms,443
+above and beyond,dining,392
+locationcontacts,dining,387
+rooms,dining,356
+above and beyond,offers,337
+above and beyond,rooms,317
+default,locationcontacts,314
+aboutus,dining,311
+location and contacts,offers,281
+guestrooms,dining,281
+above and beyond,facilities,277
+guestrooms,facilities,277
+facilities,offers,272
+offers,dining,272
+about the hotel,rooms,248
+guestrooms,locationcontacts,224
+about the hotel,offers,223
