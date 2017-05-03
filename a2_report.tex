@@ -1,8 +1,11 @@
 \documentclass[12pt,titlepage]{article}
 
+\usepackage{listings}
+
 \include{preamble}
 
-\author{Alex Cummaudo \texttt{<ca@deakin.edu.au>}\\ Jake Renzella \texttt{<renzella@deakin.edu.au>}\\ Deakin Software and Technology Innovation Laboratory\\School of Information Technology\\Deakin University, Australia}
+\author{Alex Cummaudo \texttt{<ca@deakin.edu.au>}\\ Jake Renzella \texttt{<jake.renzella@deakin.edu.au>}\\
+Deakin Software and Technology Innovation Laboratory\\School of Information Technology\\Deakin University, Australia}
 \title{Hotel TULIP Web Server Data Analysis\\\normalsize{\bfseries Assignment 2 - SIT742 Modern Data Science}}
 
 \begin{document}
@@ -38,6 +41,21 @@ A list of key findings in the analysis are as thus:
 \subsection{Assumptions Made}
 
 \subsection{Extraction Process}
+
+\subsubsection{Internal/External IP Address Regular Expression}
+
+To differentiate between private site visitors and external visitors, a regular expression was used to filter private/public IP address ranges. The regular expression is shown below:
+
+\begin{lstlisting}
+c_ip regexp 
+	'(^127\.)|(^10\.) | 
+	(^172\.1[6-9]\.) |
+	(^172\.2[0-9]\.) |
+	(^172\.3[0-1]\.) |
+	(^192\.168\.)'
+\end{lstlisting}
+
+Using the not of the regular expression will select only public IP addresses.
 
 \subsection{Data Mining}
 
