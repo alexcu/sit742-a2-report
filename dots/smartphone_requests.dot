@@ -1,0 +1,28 @@
+strict digraph "" {
+layout="dot";
+locationcontacts;
+facilities;
+default;
+dining;
+offers;
+aboutus;
+guestrooms;
+locationcontacts -> dining  [label=518, weight=518];
+locationcontacts -> guestrooms  [label=336, weight=336];
+facilities -> default  [label=206, weight=206];
+facilities -> dining  [label=213, weight=213];
+facilities -> guestrooms  [label=203, weight=203];
+facilities -> locationcontacts  [label=290, weight=290];
+default -> dining  [label=790, weight=790];
+default -> locationcontacts  [label=381, weight=381];
+default -> guestrooms  [label=260, weight=260];
+offers -> dining  [label=535, weight=535];
+offers -> guestrooms  [label=258, weight=258];
+offers -> locationcontacts  [label=237, weight=237];
+offers -> facilities  [label=213, weight=213];
+aboutus -> default  [label=176, weight=176];
+aboutus -> dining  [label=433, weight=433];
+aboutus -> locationcontacts  [label=282, weight=282];
+aboutus -> facilities  [label=186, weight=186];
+guestrooms -> dining  [label=203, weight=203];
+}

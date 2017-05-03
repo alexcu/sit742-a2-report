@@ -1,0 +1,38 @@
+strict digraph "" {
+layout="dot";
+locationcontacts;
+facilities;
+"about the hotel";
+default;
+dining;
+offers;
+rooms;
+home;
+"above and beyond";
+"location and contacts";
+events;
+locationcontacts -> dining  [label=547, weight=547];
+facilities -> dining  [label=1387, weight=1387];
+facilities -> offers  [label=596, weight=596];
+"about the hotel" -> dining  [label=1189, weight=1189];
+"about the hotel" -> offers  [label=963, weight=963];
+"about the hotel" -> "location and contacts"  [label=851, weight=851];
+"about the hotel" -> facilities  [label=612, weight=612];
+default -> dining  [label=1049, weight=1049];
+offers -> dining  [label=596, weight=596];
+rooms -> dining  [label=868, weight=868];
+rooms -> offers  [label=1094, weight=1094];
+rooms -> facilities  [label=649, weight=649];
+rooms -> "about the hotel"  [label=733, weight=733];
+home -> dining  [label=638, weight=638];
+home -> offers  [label=534, weight=534];
+"above and beyond" -> dining  [label=1734, weight=1734];
+"above and beyond" -> offers  [label=662, weight=662];
+"above and beyond" -> "about the hotel"  [label=548, weight=548];
+"above and beyond" -> rooms  [label=566, weight=566];
+"above and beyond" -> facilities  [label=565, weight=565];
+"location and contacts" -> dining  [label=1141, weight=1141];
+"location and contacts" -> offers  [label=792, weight=792];
+events -> dining  [label=692, weight=692];
+events -> offers  [label=796, weight=796];
+}
