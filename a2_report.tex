@@ -34,11 +34,29 @@ A list of key findings in the analysis are as thus:
 \newpage
 \section{Introduction}
 
+Browsing patterns on the Hotel TULIP Weblogs were assessed in order to gain insight on how customers navigate through the website within a typical \textit{session}. A user session is defined as a typical visit to the website, and a collation of all the different \textit{informational resources} that were accessed. Information resources refer to web pages that contain primary content about the hotel and its facilities, rather than multimedia and technical-related resources.
+
+In order to assess how \emph{different} customers do so, we extract different information based on the web log data format as prescribed in Appendix~\ref{apx:data_format}. We contrast those users who make requests:
+
+\begin{itemize}
+  \item Internally, such as guests using the internet within the hotel's network,
+  \item Externally, such as prospective guests browsing the website for a potential stay in the hotel,
+  \item From users within the top three countries that visit the  website (refer to Assignment 1), and
+  \item Between users on PCs, Smartphones, Tablets and Bots.
+\end{itemize}
+
+Each of these crtieria were analysed against matching sessions that satisfy such criteria. Data mined using the Frequency Pattern was done so using the FPGrowth Algorithm in Apache Spark.
+
 \section{Dataset}
 
+% Brief sentence about the dataset?
+
 \section{Method}
+\label{sec:method}
 
 \subsection{Assumptions Made}
+
+% What is a session? Define the session algorithm.
 
 \subsection{Extraction Process}
 
@@ -61,6 +79,12 @@ Negating this \texttt{WHERE} clause of the regular expression will select only p
 
 \section{Results}
 \label{sec:results}
+
+\subsection{Reading Directional Network Graph}
+
+In our results, we have visualised the frequency patterns of users via the use of directional network graphs. In these graphs, we are able to visualise the frequency patterns of how people made requests to the website given the assumptions and extraction methods made in Section~\ref{sec:method}.
+
+Below in Figure~\ref{} is a sample directional network graph, a snippet made of the top 
 
 \subsection{IP Request Sources}
 
@@ -131,6 +155,8 @@ Below are tables of frequency pattern results for each section identified in Sec
 
 \clearpage
 
+\section{Web Log Data Format}
+\label{apx:data_format}
 
 \section{Extrapolation Results}
 \label{apx:results}
