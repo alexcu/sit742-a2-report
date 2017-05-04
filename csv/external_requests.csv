@@ -1,24 +1,4 @@
 From,To,Frequency
-offers,dining,6508
-rooms,offers,5321
-above and beyond,dining,4057
-about the hotel,rooms,3600
-facilities,dining,3599
-facilities,rooms,3555
-facilities,offers,3485
-above and beyond,rooms,3236
-rooms,dining,3167
-about the hotel,offers,3143
-above and beyond,offers,3052
-about the hotel,dining,2984
-above and beyond,facilities,2800
-location and contacts,about the hotel,2754
-facilities,about the hotel,2753
-location and contacts,offers,2524
-above and beyond,about the hotel,2408
-location and contacts,dining,2195
-location and contacts,rooms,2081
-home,offers,1877
 above and beyond,facilities,1823
 facilities,rooms,1823
 above and beyond,offers,1760
@@ -29,54 +9,5 @@ facilities,offers,1727
 offers,dining,1727
 facilities,rooms,1715
 rooms,dining,1715
-home,rooms,1699
-location and contacts,facilities,1689
 above and beyond,facilities,1684
 facilities,dining,1684
-above and beyond,rooms,1673
-rooms,dining,1673
-above and beyond,rooms,1662
-rooms,offers,1662
-home,about the hotel,1640
-facilities,about the hotel,1634
-about the hotel,rooms,1634
-about the hotel,rooms,1632
-rooms,offers,1632
-events,offers,1630
-events,dining,1575
-above and beyond,about the hotel,1566
-about the hotel,rooms,1566
-our city,facilities,1558
-rooms,offers,1549
-offers,dining,1549
-above and beyond,facilities,1502
-facilities,offers,1502
-home,dining,1499
-events,facilities,1491
-our city,about the hotel,1441
-about the hotel,rooms,1432
-rooms,dining,1432
-above and beyond,facilities,1428
-facilities,about the hotel,1428
-events,about the hotel,1428
-above and beyond,about the hotel,1386
-about the hotel,dining,1386
-facilities,about the hotel,1381
-about the hotel,dining,1381
-above and beyond,location and contacts,1363
-our city,offers,1358
-facilities,about the hotel,1309
-about the hotel,offers,1309
-about the hotel,offers,1304
-offers,dining,1304
-our city,rooms,1299
-home,location and contacts,1281
-above and beyond,about the hotel,1276
-about the hotel,offers,1276
-events,rooms,1239
-above and beyond,facilities,1215
-facilities,rooms,1215
-rooms,dining,1215
-events,above and beyond,1191
-our city,above and beyond,1186
-our city,dining,1184
