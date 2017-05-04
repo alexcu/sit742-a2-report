@@ -1,28 +1,19 @@
-strict digraph "" {
+digraph "" {
 layout="dot";
 locationcontacts;
-facilities;
-default;
 dining;
+default;
+facilities;
 offers;
-aboutus;
 guestrooms;
-locationcontacts -> dining  [label=518, weight=518];
-locationcontacts -> guestrooms  [label=336, weight=336];
-facilities -> default  [label=206, weight=206];
-facilities -> dining  [label=213, weight=213];
-facilities -> guestrooms  [label=203, weight=203];
-facilities -> locationcontacts  [label=290, weight=290];
-default -> dining  [label=790, weight=790];
-default -> locationcontacts  [label=381, weight=381];
-default -> guestrooms  [label=260, weight=260];
-offers -> dining  [label=535, weight=535];
-offers -> guestrooms  [label=258, weight=258];
-offers -> locationcontacts  [label=237, weight=237];
-offers -> facilities  [label=213, weight=213];
-aboutus -> default  [label=176, weight=176];
-aboutus -> dining  [label=433, weight=433];
-aboutus -> locationcontacts  [label=282, weight=282];
-aboutus -> facilities  [label=186, weight=186];
-guestrooms -> dining  [label=203, weight=203];
+locationcontacts -> dining  [key=0, label=162, weight=162];
+locationcontacts -> dining  [key=1, label=159, weight=159];
+locationcontacts -> dining  [key=2, label=145, weight=145];
+default -> locationcontacts  [key=0, label=145, weight=145];
+facilities -> dining  [key=0, label=213, weight=213];
+facilities -> guestrooms  [key=0, label=203, weight=203];
+facilities -> locationcontacts  [key=0, label=159, weight=159];
+offers -> facilities  [key=0, label=213, weight=213];
+offers -> locationcontacts  [key=0, label=162, weight=162];
+guestrooms -> dining  [key=0, label=203, weight=203];
 }
