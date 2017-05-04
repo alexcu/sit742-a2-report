@@ -80,11 +80,35 @@ Negating this \texttt{WHERE} clause of the regular expression will select only p
 \section{Results}
 \label{sec:results}
 
-\subsection{Reading Directional Network Graph}
+\subsection{Sample Directional Network Graph}
 
 In our results, we have visualised the frequency patterns of users via the use of directional network graphs. In these graphs, we are able to visualise the frequency patterns of how people made requests to the website given the assumptions and extraction methods made in Section~\ref{sec:method}.
 
-Below in Figure~\ref{} is a sample directional network graph, a snippet made of the top 
+Within each graph, a \textit{sequence} is identified as a series of multiple clicks (edges) between pages (nodes). Each sequence is coloured using the same edge colour. This sequence is also identified using a number, which is drawn on the edge label. The frequency of this pattern for the particular sequence identified is given after the forward slash on the label.
+
+For example, a sample directional network graph, a subset of the PC requests, is given in Figure~\ref{fig:sample_graph}. This data is also presented in tabular format as Table~\ref{tbl:sample_graph}.
+
+Here we can interpret that the graph has four key sequences, as differentiated by the sequence numbers. Sequence numbers are ordered by decreasing frequency; the higher the sequence number the increased likelihood of the pattern occurring. In this graph, we see that users of PCs are most likely to move between pages in the following order:
+
+\begin{enumerate}
+  \item from the `Above and Beyond' page to the `Dining' page (frequency of 293),
+  \item from the `Facilities' page to the `Dining' page (Frequency of 288),
+  \item from the `Above and Beyond' page to the `Offers' page (frequency of 286), and, with equal frequency,
+  \item from the `Facilities' page to the `Offers' page.
+\end{enumerate} 
+
+\newpage
+
+\csvtable{sample_graph}{Sample Frequency Graph}
+
+\begin{figure}[b!]
+  \centering
+  \includegraphics{figs/digraphs/sample_graph}
+  \caption{Sample frequency patterns identified in a subset of PC requests. Refer to Table~\ref{tbl:sample_graph} for frequency pattern interactions.}
+  \label{fig:sample_graph}
+\end{figure}
+
+\newpage
 
 \subsection{IP Request Sources}
 
@@ -135,23 +159,15 @@ Below in Figure~\ref{} is a sample directional network graph, a snippet made of 
 
 Below are tables of frequency pattern results for each section identified in Section~\ref{sec:results}.
 
-\csvtable{csv/internal_requests.csv}{Internal Request Frequency Patterns}{tbl:internal_requests}
-
-\csvtable{csv/external_requests.csv}{External Request Frequency Patterns}{tbl:external_requests}
-
-\csvtable{csv/hk_requests.csv}{Hong Kong Frequency Patterns}{tbl:hk_requests}
-
-\csvtable{csv/us_requests.csv}{USA Request Frequency Patterns}{tbl:us_requests}
-
-\csvtable{csv/au_requests.csv}{Australian Request Frequency Patterns}{tbl:au_requests}
-
-\csvtable{csv/pc_requests.csv}{PC Request Frequency Patterns}{tbl:pc_requests}
-
-\csvtable{csv/tablet_requests.csv}{Tablet Request Frequency Patterns}{tbl:tablet_requests}
-
-\csvtable{csv/smartphone_requests.csv}{Smartphone Request Frequency Patterns}{tbl:smartphone_requests}
-
-\csvtable{csv/bots_requests.csv}{Bots Request Frequency Patterns}{tbl:bots_requests}
+\csvtable{internal_requests}{Internal Request Frequency Patterns}
+\csvtable{external_requests}{External Request Frequency Patterns}
+\csvtable{hk_requests}{Hong Kong Frequency Patterns}
+\csvtable{us_requests}{USA Request Frequency Patterns}
+\csvtable{au_requests}{Australian Request Frequency Patterns}
+\csvtable{pc_requests}{PC Request Frequency Patterns}
+\csvtable{tablet_requests}{Tablet Request Frequency Patterns}
+\csvtable{smartphone_requests}{Smartphone Request Frequency Patterns}
+\csvtable{bots_requests}{Bots Request Frequency Patterns}
 
 \clearpage
 

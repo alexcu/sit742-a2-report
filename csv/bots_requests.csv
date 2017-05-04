@@ -1,21 +1,21 @@
-From,To,Frequency
-our city,location and contacts,214
-location and contacts,about the hotel,214
-home,offers,202
-offers,about the hotel,202
-above and beyond,home,200
-home,offers,200
-home,rooms,199
-rooms,about the hotel,199
-home,rooms,197
-rooms,offers,197
-above and beyond,offers,196
-offers,about the hotel,196
-above and beyond,home,193
-home,about the hotel,193
-our city,facilities,190
-facilities,about the hotel,190
-rooms,offers,190
-offers,about the hotel,190
-press,facilities,188
-facilities,about the hotel,188
+Sequence,From,To,Frequency
+0,our city,location and contacts,214
+0,location and contacts,about the hotel,214
+1,home,offers,202
+1,offers,about the hotel,202
+2,above and beyond,home,200
+2,home,offers,200
+3,home,rooms,199
+3,rooms,about the hotel,199
+4,home,rooms,197
+4,rooms,offers,197
+5,above and beyond,offers,196
+5,offers,about the hotel,196
+6,above and beyond,home,193
+6,home,about the hotel,193
+7,our city,facilities,190
+7,facilities,about the hotel,190
+8,rooms,offers,190
+8,offers,about the hotel,190
+9,press,facilities,188
+9,facilities,about the hotel,188

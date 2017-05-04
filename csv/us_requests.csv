@@ -1,17 +1,17 @@
-From,To,Frequency
-rooms,offers,330
-offers,about the hotel,330
-above and beyond,rooms,329
-rooms,about the hotel,329
-above and beyond,rooms,299
-rooms,offers,299
-facilities,rooms,281
-rooms,about the hotel,281
-above and beyond,offers,273
-offers,about the hotel,273
-above and beyond,facilities,272
-facilities,rooms,272
-rooms,dining,268
-dining,offers,268
-our city,facilities,260
-facilities,about the hotel,260
+Sequence,From,To,Frequency
+0,rooms,offers,330
+0,offers,about the hotel,330
+1,above and beyond,rooms,329
+1,rooms,about the hotel,329
+2,above and beyond,rooms,299
+2,rooms,offers,299
+3,facilities,rooms,281
+3,rooms,about the hotel,281
+4,above and beyond,offers,273
+4,offers,about the hotel,273
+5,above and beyond,facilities,272
+5,facilities,rooms,272
+6,rooms,dining,268
+6,dining,offers,268
+7,our city,facilities,260
+7,facilities,about the hotel,260

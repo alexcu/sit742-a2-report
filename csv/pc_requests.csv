@@ -1,47 +1,47 @@
-From,To,Frequency
-above and beyond,facilities,349
-facilities,rooms,349
-facilities,about the hotel,296
-about the hotel,rooms,296
-above and beyond,rooms,293
-rooms,dining,293
-facilities,rooms,288
-rooms,dining,288
-above and beyond,rooms,286
-rooms,offers,286
-facilities,rooms,286
-rooms,offers,286
-above and beyond,about the hotel,280
-about the hotel,rooms,280
-above and beyond,facilities,269
-facilities,dining,269
-about the hotel,rooms,267
-rooms,offers,267
-above and beyond,facilities,246
-facilities,about the hotel,246
-about the hotel,rooms,241
-rooms,dining,241
-above and beyond,dining,238
-dining,offers,238
-above and beyond,about the hotel,231
-about the hotel,dining,231
-above and beyond,facilities,230
-facilities,offers,230
-rooms,dining,225
-dining,offers,225
-facilities,about the hotel,213
-about the hotel,dining,213
-above and beyond,facilities,191
-facilities,rooms,191
-rooms,dining,191
-facilities,dining,189
-dining,offers,189
-facilities,about the hotel,186
-about the hotel,offers,186
-above and beyond,about the hotel,182
-about the hotel,offers,182
-above and beyond,facilities,176
-facilities,about the hotel,176
-about the hotel,rooms,176
-about the hotel,dining,171
-dining,offers,171
+Sequence,From,To,Frequency
+0,above and beyond,facilities,349
+0,facilities,rooms,349
+1,facilities,about the hotel,296
+1,about the hotel,rooms,296
+2,above and beyond,rooms,293
+2,rooms,dining,293
+3,facilities,rooms,288
+3,rooms,dining,288
+4,above and beyond,rooms,286
+4,rooms,offers,286
+5,facilities,rooms,286
+5,rooms,offers,286
+6,above and beyond,about the hotel,280
+6,about the hotel,rooms,280
+7,above and beyond,facilities,269
+7,facilities,dining,269
+8,about the hotel,rooms,267
+8,rooms,offers,267
+9,above and beyond,facilities,246
+9,facilities,about the hotel,246
+10,about the hotel,rooms,241
+10,rooms,dining,241
+11,above and beyond,dining,238
+11,dining,offers,238
+12,above and beyond,about the hotel,231
+12,about the hotel,dining,231
+13,above and beyond,facilities,230
+13,facilities,offers,230
+14,rooms,dining,225
+14,dining,offers,225
+15,facilities,about the hotel,213
+15,about the hotel,dining,213
+16,above and beyond,facilities,191
+16,facilities,rooms,191
+16,rooms,dining,191
+17,facilities,dining,189
+17,dining,offers,189
+18,facilities,about the hotel,186
+18,about the hotel,offers,186
+19,above and beyond,about the hotel,182
+19,about the hotel,offers,182
+20,above and beyond,facilities,176
+20,facilities,about the hotel,176
+20,about the hotel,rooms,176
+21,about the hotel,dining,171
+21,dining,offers,171

@@ -1,33 +1,33 @@
-From,To,Frequency
-above and beyond,facilities,152
-facilities,rooms,152
-above and beyond,rooms,151
-rooms,offers,151
-facilities,rooms,141
-rooms,offers,141
-about the hotel,rooms,122
-rooms,offers,122
-about the hotel,facilities,120
-facilities,rooms,120
-above and beyond,dining,120
-dining,rooms,120
-above and beyond,facilities,115
-facilities,offers,115
-facilities,dining,107
-dining,rooms,107
-above and beyond,facilities,105
-facilities,dining,105
-dining,rooms,103
-rooms,offers,103
-about the hotel,above and beyond,100
-above and beyond,facilities,100
-above and beyond,dining,100
-dining,offers,100
-about the hotel,above and beyond,97
-above and beyond,rooms,97
-location and contacts,rooms,92
-rooms,offers,92
-about the hotel,facilities,88
-facilities,offers,88
-about the hotel,dining,85
-dining,rooms,85
+Sequence,From,To,Frequency
+0,above and beyond,facilities,152
+0,facilities,rooms,152
+1,above and beyond,rooms,151
+1,rooms,offers,151
+2,facilities,rooms,141
+2,rooms,offers,141
+3,about the hotel,rooms,122
+3,rooms,offers,122
+4,about the hotel,facilities,120
+4,facilities,rooms,120
+5,above and beyond,dining,120
+5,dining,rooms,120
+6,above and beyond,facilities,115
+6,facilities,offers,115
+7,facilities,dining,107
+7,dining,rooms,107
+8,above and beyond,facilities,105
+8,facilities,dining,105
+9,dining,rooms,103
+9,rooms,offers,103
+10,about the hotel,above and beyond,100
+10,above and beyond,facilities,100
+11,above and beyond,dining,100
+11,dining,offers,100
+12,about the hotel,above and beyond,97
+12,above and beyond,rooms,97
+13,location and contacts,rooms,92
+13,rooms,offers,92
+14,about the hotel,facilities,88
+14,facilities,offers,88
+15,about the hotel,dining,85
+15,dining,rooms,85

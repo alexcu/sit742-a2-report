@@ -1,11 +1,11 @@
-From,To,Frequency
-facilities,offers,272
-offers,dining,272
-facilities,rooms,197
-rooms,offers,197
-facilities,rooms,163
-rooms,dining,163
-above and beyond,offers,162
-offers,dining,162
-above and beyond,facilities,162
-facilities,rooms,162
+Sequence,From,To,Frequency
+0,facilities,offers,272
+0,offers,dining,272
+1,facilities,rooms,197
+1,rooms,offers,197
+2,facilities,rooms,163
+2,rooms,dining,163
+3,above and beyond,offers,162
+3,offers,dining,162
+4,above and beyond,facilities,162
+4,facilities,rooms,162

@@ -1,19 +1,19 @@
-From,To,Frequency
-about the hotel,rooms,123
-rooms,offers,123
-about the hotel,dining,122
-dining,offers,122
-facilities,about the hotel,103
-about the hotel,offers,103
-rooms,dining,102
-dining,offers,102
-facilities,about the hotel,101
-about the hotel,rooms,101
-facilities,rooms,99
-rooms,offers,99
-facilities,dining,96
-dining,offers,96
-about the hotel,rooms,96
-rooms,dining,96
-above and beyond,dining,94
-dining,offers,94
+Sequence,From,To,Frequency
+0,about the hotel,rooms,123
+0,rooms,offers,123
+1,about the hotel,dining,122
+1,dining,offers,122
+2,facilities,about the hotel,103
+2,about the hotel,offers,103
+3,rooms,dining,102
+3,dining,offers,102
+4,facilities,about the hotel,101
+4,about the hotel,rooms,101
+5,facilities,rooms,99
+5,rooms,offers,99
+6,facilities,dining,96
+6,dining,offers,96
+7,about the hotel,rooms,96
+7,rooms,dining,96
+8,above and beyond,dining,94
+8,dining,offers,94

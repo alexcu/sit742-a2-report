@@ -1,0 +1,15 @@
+digraph "" {
+layout="dot";
+facilities;
+offers;
+rooms;
+"above and beyond";
+facilities -> rooms  [key=2, label="5/286", weight=286, color="red"];
+rooms -> offers  [key=1, label="5/286", weight=286, color="red"];
+"above and beyond" -> rooms  [key=1, label="4/286", weight=286, color="green"];
+rooms -> offers  [key=0, label="4/286", weight=286, color="green"];
+facilities -> rooms  [key=1, label="3/288", weight=288, color="blue"];
+rooms -> dining  [key=1, label="3/288", weight=288, color="blue"];
+"above and beyond" -> rooms  [key=0, label="2/293", weight=293, color="orange"];
+rooms -> dining  [key=0, label="2/293", weight=293, color="orange"];
+}

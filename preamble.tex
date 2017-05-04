@@ -15,26 +15,26 @@
 % CSV tables
 \usepackage{csvsimple,booktabs,longtable}
 % Define a command to read in CSVs (filename, caption, label)
-\newcommand{\csvtable}[3]{
+\newcommand{\csvtable}[2]{
   \csvreader[
-    longtable=ll|l,
+    longtable=rlcll,
     table head=
       \caption{#2}
-      \label{#3}\\
+      \label{tbl:#1}\\
       \toprule
-      \bfseries From & \bfseries To & \bfseries Frequency \\
+      \bfseries Sequence & \bfseries From & & \bfseries To & \bfseries Frequency \\
       \midrule
       \endfirsthead
-      \caption*{Table \ref{#3} (\textit{continued from Page~\pageref{#3}}): #2}\\\toprule
-      \bfseries From & \bfseries To & \bfseries Frequency \\
+      \caption*{Table \ref{tbl:#1} (\textit{continued from Page~\pageref{tbl:#1}}): #2}\\\toprule
+      \bfseries Sequence & \bfseries From & & \bfseries To & \bfseries Frequency \\
       \midrule
       \endhead
       \bottomrule
-      \textit{Continued on next page...}
+      & & & & \textit{Continued on next page...}
       \endfoot
       \bottomrule
       \endlastfoot
-  ]{#1}{1=\From,2=\To, 3=\Frequency}{\From & \To & \Frequency}
+  ]{csv/#1.csv}{1=\Sequence, 2=\From, 3=\To, 4=\Frequency}{\textbf{\Sequence} & \From & $\rightarrow$ & \To & \Frequency}
 }
 % Define a command to import the dot figure
 \newcommand{\dotfigure}[2]{
