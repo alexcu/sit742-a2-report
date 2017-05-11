@@ -1,0 +1,15 @@
+AttributeName,DataType,DataSubtype,Description,Examples,Notes
+date,MC,DATE - Date,Date: Date when request occurred,2014-08-01,UTC time zone; ISO 8601 date format (YYYY-MM-DD)
+time,MC,DATE - Time,Time: Time when request occurred,09:51:23,UTC time zone; ISO 8601 24-hr time format (hh:mm:ss)
+s-ip,CN,ADDR - Address - IP Address,Server IP Address: IP of the server generating the log responding to the request,10.130.0.12,N/A
+cs-method,CN,ID - Identification - W3C Named HTTP Methods,Method: Client to server request HTTP/1.1 method,POST,"All methods: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT"
+cs-uri-stem,CN,URL - Uniform Resource Identifier (URI),URI Stem: Stem portion of the full URI made in the client to server request,/sitecore,N/A
+cs-uri-query,CN,URL - Uniform Resource Identifier (URI),URI Query: Query portion of the full URI made in the client to server request,cmd=GetTreeview,May be empty; Query string is specifically matched as URI. See Hallam-Baker \& Behlendorf (1998).
+s-port,CN,ADDR - Address - Port Number,Server Port: Port for the server which request is made,80,N/A
+cs-username,CN,STR - Free String,User Name: Name of authenticated user accessing the server,-,Anonymous users are represented with a hyphen.
+c-ip,CN,ADDR - Address - IP Address,Client IP Address: IP of the client making the request,10.120.7.23,N/A
+cs(User-Agent),CN,STR - String - Formatted,User Agent: The specific browser type that has made the request,Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+6.1;+Trident/7.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+.NET4.0C;+.NET4.0E;+MALC),"Refer to RFC2616 (Fielding et al., 1999, p. 144) for specific format."
+sc-status,CN,ID - Identification - W3C Named HTTP Response Status Code,HTTP Status: The HTTP response status code,200,"Refer to RFC2616 (Fielding et al., 1999, p. 39) for specific codes. Can generally be categorised as: 1xx Informational, 2xx Success, 3xx Redirection, 4xx Client Error, 5xx Server Error."
+sc-substatus,CN,ID - Identification - Microsoft IIS Named HTTP Response Sub status Code,Protocol Sub status: The sub status  error code,0,Refer to Microsoft (2017) for specific codes. A zero indicates no sub status error code.
+sc-win32-status,CN,ID - Identification - Microsoft IIS Named Windows Code,Win32 Status: The Windows status code,0,Generally not applicable to non-Windows devices; defaults to zero.
+time-taken,MC,DATE - Time - From zero,Duration: The time taken for the request to complete.,39,Measured in milliseconds.

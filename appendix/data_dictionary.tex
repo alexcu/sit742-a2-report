@@ -1,0 +1,74 @@
+\section{Data Dictionary}
+\label{app:data_dictionary}
+
+\subsection{Dataset Description}
+\label{app:data_dictionary:dataset_description}
+
+\begin{table}[h!]
+\centering
+\caption{Dataset Description}
+\label{tab:dataset_description}
+\vspace{12pt}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Key}          & \textbf{Entry}                                                                                                                                                                                                                                                                             \\ \midrule
+Name         & Hotel TULIP Web Log Dataset                                                                                                                                                                                                                                                       \\
+Size         & 17.06 GB (954.7 MB compressed)                                                                                                                                                                                                                                                    \\
+Release Date & 30/4/17                                                                                                                                                                                                                                                                           \\
+Attributes   & 14                                                                                                                                                                                                                                                                                \\
+No. Records  & 73,368,256                                                                                                                                                                                                                                                                        \\
+Provider     & Dr Beer Guts, CIO, Hotel TULIP (Information Technology Division)\footnote{Download URL: \url{https://d2l.deakin.edu.au/d2l/le/content/520519/topics/files/download/3482057/DirectFileTopicDownload, https://d2l.deakin.edu.au/d2l/le/content/520519/viewContent/3482057/View?ou=520519}.} \\
+Privacy      & Confidential\footnote{Exclusively available for educational purposes only for the Deakin University unit SIT742. Redistribution is prohibited.                                                                                                                                          } \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Contact Information}
+\label{app:data_dictionary:contact}
+
+\begin{table}[h!]
+\centering
+\caption{Dataset Contact Information}
+\label{tab:dataset_contact_info}
+\vspace{12pt}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Key}          & \textbf{Entry}                                                                                                                                                                                                                                                                             \\ \midrule
+Prepared by      & Team-SIT742                                                               \\
+Point of Contact & Alex Cummaudo \texttt{\textless ca@deakin.edu.au\textgreater}            \\
+                 & Jake Renzella \texttt{\textless jake.renzella@deakin.edu.au\textgreater} \\
+Team Members     & Alex Cummaudo \texttt{\textless ca@deakin.edu.au\textgreater}            \\
+                 & Jake Renzella \texttt{\textless jake.renzella@deakin.edu.au\textgreater} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+\begin{landscape}
+
+\subsection{Data Dictionary}
+\label{app:data_dictionary:data_dictionary}
+
+\pagestyle{empty}
+\csvreader[
+    longtable=p{0.0625\linewidth}p{0.0625\linewidth}p{0.125\linewidth}p{0.25\linewidth}p{0.125\linewidth}p{0.25\linewidth},
+    table head=
+      \caption{Data Dictionary}
+      \label{tab:data_dictionary}\\
+      \toprule      
+      \textbf{Attribute Name} & \textbf{Data Type} & \textbf{Data Subtype} & \textbf{Description} & \textbf{Examples} & \textbf{Notes} \\
+      \midrule
+      \endfirsthead
+      \caption*{Table \ref{tab:data_dictionary} (\textit{continued from Page~\pageref{tab:data_dictionary}}): Data Dictionary}\\\toprule
+      \textbf{Attribute Name} & \textbf{Data Type} & \textbf{Data Subtype} & \textbf{Description} & \textbf{Examples} & \textbf{Notes} \\
+      \midrule
+      \endhead
+      \bottomrule
+      & & & & & \textit{Continued on next page...}
+      \endfoot
+      \bottomrule
+      \endlastfoot
+  ]{csv/datadict.csv}{1=\AttributeName, 2=\DataType, 3=\DataSubtype, 4=\Description, 5=\Examples, 6=\Notes}{\textbf{\AttributeName} & \DataType & \DataSubtype & \Description & \Examples & \Notes}
+
+  
+\end{landscape}
