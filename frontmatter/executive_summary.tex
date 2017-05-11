@@ -1,0 +1,5 @@
+\section*{Executive Summary}
+
+% TODO: Rewrite executive summary
+
+This report summarises findings from a data exploration on the Hotel TULIP web server logs, recorded between the periods of August 2014 and August 2015. Each log contains one \textit{request}, or \textit{hit}, that lists fourteen attributes as described in the attached Data Dictionary spreadsheet. Publicly known client IP addresses were extracted from the MaxMind GeoIP2\footnote{See \url{http://dev.maxmind.com/geoip/geoip2/}.} dataset to analyse the location of requests (narrowed down to city). Additionally, user agent strings were parsed to analyse device and browser statistics using the Python \texttt{user-agents} library\footnote{See \url{https://pypi.python.org/pypi/user-agents}.}, thereby extrapolating demographics, usage trends, platform information, server performance, and security statistics from the raw logs provided in the dataset. Further details on the extraction of the data is provided in the source code attached in Appendix~\ref{app:results}, and an interactive version of this file is published on \href{\databricksurl}{Databricks}.

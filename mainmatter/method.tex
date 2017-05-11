@@ -1,0 +1,25 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{Assumptions Made}
+
+% What is a session? Define the session algorithm.
+
+\subsection{Extraction Process}
+
+\subsubsection{IP Address Source Regular Expression}
+
+To differentiate between private site visitors and external visitors, a regular expression was used to filter the private and public IP address ranges. The regular expression is shown below:
+
+\begin{lstlisting}[language=SQL, xleftmargin=2cm]
+WHERE l.c_ip REGEXP 
+	'(^127\.)|(^10\.) | 
+	 (^172\.1[6-9]\.) |
+	 (^172\.2[0-9]\.) |
+	 (^172\.3[0-1]\.) |
+	 (^192\.168\.)'
+\end{lstlisting}
+
+Negating this \texttt{WHERE} clause of the regular expression will select only public IP addresses.
+
+\subsection{Data Mining}

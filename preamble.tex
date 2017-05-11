@@ -20,12 +20,12 @@
     longtable=rlcll,
     table head=
       \caption{#2}
-      \label{tbl:#1}\\
+      \label{tab:#1}\\
       \toprule
       \bfseries Sequence & \bfseries From & & \bfseries To & \bfseries Frequency \\
       \midrule
       \endfirsthead
-      \caption*{Table \ref{tbl:#1} (\textit{continued from Page~\pageref{tbl:#1}}): #2}\\\toprule
+      \caption*{Table \ref{tab:#1} (\textit{continued from Page~\pageref{tab:#1}}): #2}\\\toprule
       \bfseries Sequence & \bfseries From & & \bfseries To & \bfseries Frequency \\
       \midrule
       \endhead
@@ -42,9 +42,11 @@
   \begin{figure}[p]
     \centering
     \includegraphics[width=\textwidth]{figs/digraphs/#1}
-    \caption[#2]{#2. Refer to Table~\ref{tbl:#1} for frequency pattern interactions.}
+    \caption[#2]{#2. Refer to Table~\ref{tab:#1} for frequency pattern interactions.}
     \label{fig:#1}
   \end{figure}
   \clearpage
   \newpage
 }
+% Code listings
+\usepackage{listings}
