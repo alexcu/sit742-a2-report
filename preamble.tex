@@ -40,11 +40,11 @@
   ]{csv/#1.csv}{1=\Sequence, 2=\From, 3=\To, 4=\Frequency}{\textbf{\Sequence} & \From & $\rightarrow$ & \To & \Frequency}
 }
 % Define a command to import the dot figure
-\newcommand{\dotfigure}[2]{
+\newcommand{\dotfigure}[3]{
   \newpage
   \begin{figure}[p]
     \centering
-    \includegraphics[width=\textwidth]{figs/digraphs/#1}
+    \includegraphics[width=#3\textwidth]{figs/digraphs/#1}
     \caption[#2]{#2. Refer to Table~\ref{tab:#1} for frequency pattern interactions.}
     \label{fig:#1}
   \end{figure}
