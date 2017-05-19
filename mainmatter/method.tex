@@ -31,16 +31,35 @@ We group every request using these four key factors, using a hash as a delimiter
 Therefore the \texttt{session\_identifier} would be:
 
 \begin{lstlisting}
-    1.2.3.4#Safari#29-02-2017#3
+      1.2.3.4#Safari#29-02-2017#03
 \end{lstlisting}
 
-Hence, multiple requests made within the 3rd hour of the 29th of February 2017 by the IP address \texttt{1.2.3.4} with the user agent \texttt{Safari} will be gathered together.
+Hence, multiple requests made within the 3rd hour of the 29th of February 2017 by the IP address \texttt{1.2.3.4} with the user agent \texttt{Safari} will be gathered together. Obviously this example is trivial and is more detailed in practice, but as an explanation it helps to be simple.
 
 Advantages of this approach is that there can be multiple requests made from a single IP address that \textit{are not} from the same user agent. For example, internal requests made by users within the hotel would use different computers, and therefore different \texttt{user\_agent} strings would be made, making the session identifier unique.
 
+Disadvantages of this approach are that there could be two users on an internal network (i.e., same \texttt{client\_ip}) using the \textit{exact} same user agent within the same exact hour who are technically not the same person. Additionally, by grouping sessions by the hour, any session that was near the hour may be split into two sessions. These are some limitations of our approach.
+
+\subsubsection{Selection of Resources}
+\label{sec:method:assumptions:selection_of_resources}
+
+Not all requests were included in the analysis, as some requests were simply resource requests. We want to focus purely on \textit{informational resources}, and therefore need to filter the number of requests to those that are relevant.
+
+To do this, we consider the following:
+
+\begin{enumerate}
+  \item The request resource is non-multimedia or functional, but informational. That is, requests whose resources are not JavaScript, Cascading Style Sheets, Images and the like, but rather ASPX and ASHX files (ASP.NET and Generic Web Handler pages that contain information about the hotel).
+  \item The request resource is not under the directories \texttt{media}, \texttt{layouts}, or \texttt{sitecore}, as these directories do not contain informational resources.
+  \item The request returns a client status that is only 200 (Success), or is not a placeholder page for a status page, e.g., a \texttt{404.aspx} page would not be appropriate to consider.
+\end{enumerate}
+
+Additionally, we make all request resources consistent for comparison by making them all lower case, which is made visible in the diagrams shown in Section~\ref{sec:results}.
+
 \subsection{Extraction Process}
+\label{sec:method:extraction_process}
 
 \subsubsection{IP Address Source Regular Expression}
+\label{sec:method:extraction_process:ip_regex}
 
 To differentiate between private site visitors and external visitors, a regular expression was used to filter the private and public IP address ranges. The regular expression is shown below:
 
@@ -55,4 +74,11 @@ WHERE l.c_ip REGEXP
 
 Negating this \texttt{WHERE} clause of the regular expression will select only public IP addresses.
 
+\subsubsection{Construction of SQL Queries}
+\label{sec:method:extraction_process:sql_queries}
+
+% TODO: Write how we construct our SQL queries
+
 \subsection{Data Mining}
+
+% TODO: Write how we mine the data (what framework etc.)
