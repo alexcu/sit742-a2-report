@@ -1,9 +1,42 @@
 \section{Method}
 \label{sec:method}
 
-\subsection{Assumptions Made}
+\subsection{Assumptions}
+\label{sec:method:assumptions}
 
-% What is a session? Define the session algorithm.
+\subsubsection{User Sessions}
+\label{sec:method:assumptions:user_sessions}
+
+A \textit{web session} is defined as a single session of a particular user at a given moment of time. It consists of what pages were visited within that period of time, as determined by the requests made to the server in this period.
+
+To extrapolate meaningful data, the definition of \textit{what} a user session was needed to be determined. This is because we need to find patterns made in one particular user session; when a user visits the website in one sitting, what pages do they visit and in what order?
+
+To do this, we assume that a session is made up of the following factors within a series of web requests:
+
+\begin{enumerate}
+  \item The client's IP address must be the same,
+  \item The client's user agent string must be the same,
+  \item The timestamp of the session is grouped in the same day, and
+  \item The timestamp of the session is within the same hour.
+\end{enumerate}
+
+We group every request using these four key factors, using a hash as a delimiter, into the field \texttt{session\_identifier}. Using this identifier, we can group up a series of requests into one particular session. For example, a sample request is made to the server:
+
+\begin{itemize}
+  \item The \texttt{c\_ip} field is \texttt{1.2.3.4},
+  \item The \texttt{user\_agent} field is \texttt{Safari},
+  \item The \texttt{timestamp} field is \texttt{Tue Feb 29 03:18:00 GMT 2017}
+\end{itemize}
+
+Therefore the \texttt{session\_identifier} would be:
+
+\begin{lstlisting}
+    1.2.3.4#Safari#29-02-2017#3
+\end{lstlisting}
+
+Hence, multiple requests made within the 3rd hour of the 29th of February 2017 by the IP address \texttt{1.2.3.4} with the user agent \texttt{Safari} will be gathered together.
+
+Advantages of this approach is that there can be multiple requests made from a single IP address that \textit{are not} from the same user agent. For example, internal requests made by users within the hotel would use different computers, and therefore different \texttt{user\_agent} strings would be made, making the session identifier unique.
 
 \subsection{Extraction Process}
 
