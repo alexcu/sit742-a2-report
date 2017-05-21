@@ -4,15 +4,37 @@
 % TODO: A brief paragraph summarising about IP Request sources
 
 \subsubsection{Internal Site Visitors}
+
+The internal IP request sources are visitors to the TULIP hotel who are accessing the site from the internal TULIP Hotel network (they are using computers or wifi of the hotel).
+
 \label{sec:results:ip_source:internal}
 
 % TODO: Analysis of internal site visitors
 Refer to Figure~\ref{fig:internal_requests}.
 
+The most common visitor pattern of internal visitors is "about the hotel " /rightarrow "rooms".
+
 \dotfigure{internal_requests}{Directional network graph visualising frequency patterns of internal visitors made on an internal IP range}{1}
 
 \subsubsection{External Site Visitors}
+
+The external IP request sources are visitors to the TULIP hotel who are accessing the site outside of the TULIP Hotel network (most visitors).
+
 \label{sec:results:ip_source:external}
+
+Sequences in order of sequence frequency:
+\begin{enumerate}
+  \item Above and beyond $/rightarrow$ facilities $/rightarrow$ rooms
+  \item Above and beyond $/rightarrow$ offers $/rightarrow$ dining
+  \item facilties $/rightarrow$ rooms $/rightarrow$ offers
+  \item facilties $/rightarrow$ offers $/rightarrow$ dining
+  \item facilties $/rightarrow$ rooms $/rightarrow$ dining 
+  \item above and beyond $/rightarrow$ facilties $/rightarrow$ dining
+\end{enumerate}
+
+The most common visitor s of external visitors is: "above and beyond" /rightarrow "facilities" /rightarrow "rooms" - indicating a common interest of these users. This information could indicate to TULIP Hotel that room information is highly sought after, and could be made more prominant on the website, possibly under the facilities page which will help users find the information they are looking for.
+
+Patterns also highly suggest that many users navigate to the offers page, most commonly from "above and beyond" followed by "rooms" and finally "facilities".
 
 % TODO: Analysis of external site visitors
 Refer to Figure~\ref{fig:external_requests}.
