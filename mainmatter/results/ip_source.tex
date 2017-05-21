@@ -1,34 +1,31 @@
 \subsection{IP Request Sources}
 \label{sec:results:ip_source}
 
-\newcommand{\ra}[]{$/rightarrow$}
+When a user of the TULIP Hotel website visits the website, their unique IP address is categorised as either \textit{internal} or \textit{external}. (Section~\ref{sec:method:extraction_process:ip_regex} explains how this categorisation process is achieved.) Internal IP addresses come from users who are within the network of the hotel---we assume this would usually mean that they are either using a networked computer within the hotel lobby, or are connected to Hotel TULIP's Wi-Fi network using their own personal device. External IP addresses refer to those users who are connecting to the server from outside the network (e.g., prospective guests).
 
-When a user of the TULIP Hotel website visits the website, their unqiue IP address is categorised as either internal or external. Internal IP addresses come from users who are within the network of the TULIP hotel - this would usually mean that they are either using a TULIP computer or using TULIP wifi. Analysis as been performed on both internal and external users in the following section.
+Analysis as been performed on both internal and external users in the following sections.
 
 \subsubsection{Internal Site Visitors}
-
-The internal IP request sources are visitors to the TULIP hotel who are accessing the site from the internal TULIP Hotel network (they are using computers or wifi of the hotel).
-
 \label{sec:results:ip_source:internal}
 
-Most common sequences in order of sequence frequency:
+Figure~\ref{fig:internal_requests} visualises the frequency patterns found from internal visitors from the website. Table~\ref{tab:internal_requests} (Appendix~\ref{app:additional_tables}) further extrapolates this data and identifies the frequency pattern values. We have identified the most common frequencies of user sessions within the hotel's network, ordered from most to least common below:
+
 \begin{enumerate}
-  \item about the hotel \ra rooms \ra offers (123)
-  \item about the hotel \ra dining \ra offers (122)
-  \item rooms \ra dining \ra offers (103)
-  \item facilties \ra about the hotel \ra rooms (102)
-  \item facilties \ra about the hotel \ra rooms 101)
-  \item facilties \ra rooms \ra offers (99)
-  \item facilties \ra dining \ra offers (96)
+  \item `About the Hotel' \ra{} `Rooms' \ra{} `Offers'
+  \item `About the Hotel' \ra{} `Dining' \ra{} `Offers'
+  \item `Rooms' \ra{} `Dining' \ra{} `Offers'
+  \item `Facilities' \ra{} `About the Hotel' \ra{} `Rooms'
+  \item `Facilities' \ra{} `About the Hotel' \ra{} `Rooms'
+  \item `Facilities' \ra{} `Rooms' \ra{} `Offers'
+  \item `Facilities' \ra{} `Dining' \ra{} `Offers'
 \end{enumerate}
 
-Refer to Figure~\ref{fig:internal_requests}.
 
-The most common visitor pattern of internal visitors is "about the hotel" \ra "rooms" \ra "offers" - possibly indicating that current visitors are looking to extend their stay, visit the hotel again at a later date or have possibly even walked into the hotel not being a customer but are interested in staying at the hotel.
+The most common internal visitor pattern identified indicates that current visitors are looking to extend their stay or visit the hotel again at a later date. It may also be possible that these are not guests---they may be potential guests who are not checked in, have walked into the hotel, connected to the lobby's guest network and are interested in staying at the hotel, thereby using the internal network to find out more about the rooms, dining experiences, offers available and about the hotel's facilities.
 
-For this visitor type (internal IP addresses), the most common sequence end page is "offers" - this information could be useful for TULIP Hotel to more promintantly utilise the offers page, display it more prominantly etc.
+Visitors connected to the internal network typically end their session on the `Offers' page---this information is useful and we suggest that the hotel prioritises the display of offers on its website more predominantly. This would attract more customers by presenting more offers when they are connected to the hotel's network.
 
-Regardless of pattern, it is important to note that these users are most likely already staying at the TULIP Hotel, and this is influencing their visitor usage patterns.
+Regardless of pattern, it is important to note that these visitors are guests most likely already staying at hotel, and this is influencing their visitor usage patterns.
 
 \dotfigure{internal_requests}{Directional network graph visualising frequency patterns of internal visitors made on an internal IP range}{1}
 
