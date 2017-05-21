@@ -1,12 +1,20 @@
 \subsection{Top Three Countries}
 \label{sec:results:countries}
 
-% TODO: A brief paragraph summarising about the top 3 countries trends
+Visitors of the TULIP Hotel have been geolocated based off their IP address, and the 3 most common countries have been selected for further analysis of visitor sequence patterns. These countries are Hong Kong, USA and Australia.
 
 \subsubsection{Hong Kong Visitors}
 \label{sec:results:countries:hk}
 
-% TODO: Analysis of HK visitors.
+Sequences in order of sequence frequency:
+\begin{enumerate}
+  \item Above and beyond \ra{} offers \ra{} dining (662)
+  \item facilties \ra{} offers \ra{} dining (596)
+  \item about the hotel \ra{} offers \ra{} dining (465)
+\end{enumerate}
+
+Visitors from Hong Kong most commonly browse the TULIP Hotel website with a pattern of an end page of dining. As these visitors are local to the hotel, they may be intending to only eat at the hote's resturaunt/s and are not necessarily looking to stay at the hotel. Also, most of these vistors are reaching the "dining" page from "offers" which could indicate either a successful offer campaign for dining.
+
 Refer to Figure~\ref{fig:hk_requests}.
 
 \dotfigure{hk_requests}{Directional network graph visualising frequency patterns of visitors from Hong Kong}{1}
@@ -14,7 +22,18 @@ Refer to Figure~\ref{fig:hk_requests}.
 \subsubsection{USA Visitors}
 \label{sec:results:countries:us}
 
-% TODO: Analysis of USA visitors.
+Most common sequences in order of frequency for US visitors:
+\begin{enumerate}
+  \item rooms \ra{} offers \ra{} about the hotel (330)
+  \item above and beyond \ra{} rooms \ra{} about the hotel (329)
+  \item above and beyond \ra{} rooms \ra{} offers (465)
+  \item facilties \ra{} rooms \ra{} about the hotel (281)
+  \item above and beyond \ra{} offers \ra{} about the hotel (273)
+  \item above and beyond \ra{} facilities \ra{} rooms (272)
+\end{enumerate}
+
+US visitors sequences largely differ compared to Hong Kong visitor patterns. The most common end page for US visitors is "offers" and "about the hotel". Offers as an end page in a sequence is common amongs many visitors of different categories, however "about the hotel" could be indicating that users are interested in learning more about the hotel which they are interested in staying at.
+
 Refer to Figure~\ref{fig:us_requests}.
 
 \dotfigure{us_requests}{Directional network graph visualising frequency patterns of visitors from the United States}{1}
@@ -22,7 +41,19 @@ Refer to Figure~\ref{fig:us_requests}.
 \subsubsection{Australian Visitors}
 \label{sec:results:countries:au}
 
-% TODO: Analysis of AU visitors.
+Most common sequences in order of frequency for US visitors:
+\begin{enumerate}
+  \item above and beyond \ra{} facilities \ra{} rooms (152)
+  \item above and beyond \ra{} rooms \ra{} offers (151)
+  \item facilities \ra{} rooms \ra{} offers (141)
+  \item about the hotel \ra{} rooms \ra{} offers (122)
+  \item about the hotel \ra{} facilities \ra{} rooms (120)
+  \item above and beyond \ra{} dining \ra{} rooms (120)
+  \item above and beyond \ra{} facilities \ra{} offers (115)
+\end{enumerate}
+
+Australian visitor's sequence patterns are less varied in terms of frequency - this may be due to a smaller data set (less Australian visitors than either US or Hong Kong). Common end pages for an Australian visitors within a sequence are "rooms", "offers" and "facilities" which indicates the information which Australian visitors are seeking.
+
 Refer to Figure~\ref{fig:au_requests}.
 
 \newpage
