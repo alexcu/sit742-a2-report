@@ -1,12 +1,26 @@
 \subsection{Platform Categories}
 \label{sec:results:platform}
 
-% TODO: A brief paragraph summarising about platform trends
+The following section provides a breakdown of visitor sequence patterns by platform. The 4 platforms which are presented are PC (Personal Computers), Smartphones, Tablets and bots. The information presented can help TULIP Hotel understand which pages visitors from different platoforms are viewing most. This can lead to actionable feedback such as which pages to optimise for mobile or tablet viewing.
 
 \subsubsection{PC Visitors}
 \label{sec:results:platform:pc}
 
-% TODO: Analysis of PC visitors
+\begin{enumerate}
+  \item `Above and beyond' \ra{} `Facilties' \ra{} `Rooms' (349)
+  \item `Facilities' \ra{} `About the Hotel' \ra{} `Rooms' (296)
+  \item `Above and beyond' \ra{} `Rooms' \ra{} `Dining' (293)
+  \item `Facilities' \ra{} `Rooms' \ra{} `Dining' (288)
+  \item `Above and beyond' \ra{} `Roomsl' \ra{} `Offers' (286)
+  \item `Facilities' \ra{} `Rooms' \ra{} `Offers' (286)
+  \item `Above and beyond' \ra{} `About' \ra{} `Rooms' (280)
+  \item `Above and beyond' \ra{} `Facilities' \ra{} `Dining' (269)
+\end{enumerate}
+
+The most common end pages for PC visitors (laptops and/or desktops) is `Offers', `Dining' and `Rooms'. 
+
+The large variety of sequences suggests that PC users are more likely to generally browse the TULIP site. More pages are viewed and explored suggesting a more general approach to viewing the website. This highly differs compared to smartphone and even tablet users.
+
 Refer to Figure~\ref{fig:pc_requests}.
 
 \begin{landscape}
@@ -17,7 +31,17 @@ Refer to Figure~\ref{fig:pc_requests}.
 \subsubsection{Smartphone Visitors}
 \label{sec:results:platform:smartphone}
 
-% TODO: Analysis of smartphone visitors
+\begin{enumerate}
+  \item `Offers' \ra{} `Facilties' \ra{} `Dining' (213)
+  \item `Facilities' \ra{} `Guestrooms' \ra{} `Dining' (296)
+  \item `Offers' \ra{} `Locationcontacts' \ra{} `Dining' (293)
+  \item `Facilities' \ra{} `Locationcontacts' \ra{} `Dining' (288)
+\end{enumerate}
+
+Smartphone behaviors are quite different from all other user patterns. This is possibly attributed to the considerably different viewing patterns made by smartphone users due to the `On the go' nature of the devices.
+
+Most smart phone users end at the `Dining' page. Interestingly, the smartphone category is the only category which includes the `Locationcontacts' page- possiby indicating that users are looking for a phone number to book dining experiences. This is indicating that smartphone users are less interesting in booking or looking for accomodation details, and are more likely to use the site for dining information.
+
 Refer to Figure~\ref{fig:smartphone_requests}.
 
 \dotfigure{smartphone_requests}{Directional network graph visualising frequency patterns of requests made on smartphones}{1}
@@ -25,7 +49,16 @@ Refer to Figure~\ref{fig:smartphone_requests}.
 \subsubsection{Tablet Visitors}
 \label{sec:results:platform:tablet}
 
-% TODO: Analysis of tablet visitors
+\begin{enumerate}
+  \item `Facilities' \ra{} `Offers' \ra{} `Dining' (272)
+  \item `Facilities' \ra{} `Rooms' \ra{} `Offers' (197)
+  \item `Facilities' \ra{} `Rooms' \ra{} `Dining' (163)
+  \item `Above and beyond' \ra{} `Offers' \ra{} `Dining' (162)
+  \item `Above and beyond' \ra{} `Facilities' \ra{} `Rooms' (162)
+\end{enumerate}
+
+Tablet sequence patterns are much more focused with less variety compared to PC and Smartphone browsing. This is possibly suggesting that users are behaving in a more focused matter with less varience. Most tablet users are ending at the `Dining' or `Offers' page. These patterns could also be attributed to the fact that there are less tablet users than the other categories.
+
 Refer to Figure~\ref{fig:tablet_requests}.
 
 \dotfigure{tablet_requests}{Directional network graph visualising frequency patterns of requests made on tablets}{0.8}
@@ -33,7 +66,16 @@ Refer to Figure~\ref{fig:tablet_requests}.
 \subsubsection{Bots Visitors}
 \label{sec:results:platform:bots}
 
-% TODO: Analysis of bot visitors
+An analysis of bot sequence frequency can assist TULIP Hotel with informaition regarding improving Search Engine Optimisation, a vital technique for increasing user engagement and traffic. Of note could be that most bots start a sequence from the page from `our city' and end a sequence from the page `about the hotel'.
+
+\begin{enumerate}
+  \item `Our City' \ra{} `Location and contacts' \ra{} `About the hotel' (214)
+  \item `Home' \ra{} `Offers' \ra{} `About the hotel' (202)
+  \item `Above and beyond' \ra{} `Home' \ra{} `Offers' (200)
+  \item `Home' \ra{} `Rooms' \ra{} `About the hotel' (199)
+  \item `Home' \ra{} `Rooms' \ra{} `Offers' (197)
+\end{enumerate}
+
 Refer to Figure~\ref{fig:bots_requests}.
 
 \dotfigure{bots_requests}{Directional network graph visualising frequency patterns of requests made by bots}{1}
