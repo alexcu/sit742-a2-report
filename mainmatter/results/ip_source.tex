@@ -20,37 +20,30 @@ Figure~\ref{fig:internal_requests} visualises the frequency patterns found from 
   \item `Facilities' \ra{} `Dining' \ra{} `Offers'
 \end{enumerate}
 
-
 The most common internal visitor pattern identified indicates that current visitors are looking to extend their stay or visit the hotel again at a later date. It may also be possible that these are not guests---they may be potential guests who are not checked in, have walked into the hotel, connected to the lobby's guest network and are interested in staying at the hotel, thereby using the internal network to find out more about the rooms, dining experiences, offers available and about the hotel's facilities.
 
-Visitors connected to the internal network typically end their session on the `Offers' page---this information is useful and we suggest that the hotel prioritises the display of offers on its website more predominantly. This would attract more customers by presenting more offers when they are connected to the hotel's network.
-
 Regardless of pattern, it is important to note that these visitors are guests most likely already staying at hotel, and this is influencing their visitor usage patterns.
+
+\paragraph{Proposed Suggestions} Visitors connected to the internal network typically end their session on the `Offers' page---this information is useful and we suggest that the hotel prioritises the display of offers on its website more predominantly. This would attract more customers by presenting more offers when they are connected to the hotel's network.
 
 \dotfigure{internal_requests}{Directional network graph visualising frequency patterns of internal visitors made on an internal IP range}{1}
 
 \subsubsection{External Site Visitors}
-
-The external IP request sources are visitors to the TULIP hotel who are accessing the site outside of the TULIP Hotel network. Most visitors will fall into this category.
-
 \label{sec:results:ip_source:external}
 
-Sequences in order of sequence frequency:
+Figure~\ref{fig:external_requests} visualises the frequency patterns found from external visitors. Table~\ref{tab:external_requests} (Appendix~\ref{app:additional_tables}) further extrapolates this data and identifies the frequency pattern values. The external IP request sources are visitors to the TULIP hotel who are accessing the site outside of the TULIP Hotel network. Most visitors will fall into this category. We have identified the following patterns in external visitor's user sessions:
+
 \begin{enumerate}
-  \item Above and beyond \ra facilities \ra rooms (1823)
-  \item Above and beyond \ra offers \ra dining (1760)
-  \item facilties \ra rooms \ra offers (1732)
-  \item facilties \ra offers \ra dining (1727)
-  \item facilties \ra rooms \ra dining (1715)
-  \item above and beyond \ra facilties \ra dining (1684)
+  \item `Above and Beyond' \ra{} `Facilities' \ra{} `Rooms',
+  \item `Above and Beyond' \ra{} `Offers' \ra{} `Dining',
+  \item `Facilities' \ra{} `Rooms' \ra{} `Offers',
+  \item `Facilities' \ra{} `Offers' \ra{} `Dining',
+  \item `Facilities' \ra{} `Rooms' \ra{} `Dining',
+  \item `Above and Beyond' \ra{} `Facilities' \ra{} `Dining',
 \end{enumerate}
 
-The most common visitor sequence of external visitors is: "above and beyond" \ra  "facilities" \ra  "rooms" - indicating a common interest of these users. This information could indicate to TULIP Hotel that room information is highly sought after, and could be made more prominant on the website, possibly under the facilities page which will help users find the information they are looking for.
+We have identified that most common external user sessions navigate between a mix of `Above and Beyond', `Facilities', `Rooms' and `Dining'; this highlights a common interest of these users. Patterns also highly suggest that many users navigate to the `Offers' page, most commonly from `Above and Beyond' followed by `Rooms' and finally `Facilities'.
 
-Patterns also highly suggest that many users navigate to the offers page, most commonly from "above and beyond" followed by "rooms" and finally "facilities".
-
-The most common end pages of sequences for this visitor category are offers, rooms and dining - indicating what pages and information is most sought after by users.
-
-Refer to Figure~\ref{fig:external_requests}.
+\paragraph{Proposed Suggestions} We propose that these patterns could be implemented into the UI of the website to highlight how room information is highly sought after---this could be made more prominent on the website, most particularly under the `Facilities' page, which will help users find the information they typically look for after reviewing what facilities the hotel has to offer. User sessions for this visitor category typically end at the `Offers', `Rooms' and `Dining'; we suggest these pages should be highlighted as closely as possible in the homepage as it shows what pages and information is most sought after by users once they have visited the website.
 
 \dotfigure{external_requests}{Directional network graph visualising frequency patterns of external visitors made on a non-internal IP range}{1}
