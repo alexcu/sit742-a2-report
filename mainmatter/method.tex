@@ -58,6 +58,13 @@ Additionally, we make all request resources consistent for comparison by making 
 \subsection{Extraction Process}
 \label{sec:method:extraction_process}
 
+\subsubsection{Data Mapping}
+\label{sec:method:extraction_process:data_mapping}
+
+Following the process made in Assignment 1, all publicly known client IP addresses were extracted from the MaxMind GeoIP2\footnote{See \url{http://dev.maxmind.com/geoip/geoip2/}.} dataset to determine request locations. This therefore allowed us to retrieve sessions from the top three countries, that being: (1) Hong Kong; (2) the USA; and (3) Australia. Determination that these were the top three countries can be found in Assignment 1.
+
+Additionally, user agent strings were parsed to analyse device and browser statistics using the Python \texttt{user-agents} library\footnote{See \url{https://pypi.python.org/pypi/user-agents}.} These user agent strings allowed determination of whether or not users were using: (1) PCs; (2) Smartphones; (3) Tablets; or (4) if they were actually Bots crawling the website.
+
 \subsubsection{IP Address Source Regular Expression}
 \label{sec:method:extraction_process:ip_regex}
 
@@ -74,11 +81,12 @@ WHERE l.c_ip REGEXP
 
 Negating this \texttt{WHERE} clause of the regular expression will select only public IP addresses.
 
-\subsubsection{Construction of SQL Queries}
-\label{sec:method:extraction_process:sql_queries}
-
-% TODO: Write how we construct our SQL queries
-
 \subsection{Data Mining}
 
-% TODO: Write how we mine the data (what framework etc.)
+Data analysis was gathered using Frequent Pattern mining of user sessions. The Apache Spark implementation \citep{spark} uses FPGrowth, an algorithm described by \citet{Han:2000:MFP:335191.335372} that calculates item frequencies to identify frequent items in a given set of data. The provided data in our case was the extracted data from our SQL queries which were developed inside the attached Python Notebook.
+
+The Apache Spark implementation requires the data parameter \texttt{minSupport}, which is the the threshold for an itemset to be identified as frequent. The default support level chosen was 0.01 (i.e., if a frequent item appears 10 times out of 1000 transactions, then its support is 0.01).
+
+However, this default support value was massaged and relaxed in some instances where few patterns could be identified. These cases are: Hong Kong, Smartphone and Tablet requests, where the support level was relaxed by 50\%; and Australian requests, where the support level was relaxed by 75\%.
+
+Additionally, we wish to retrieve sessions that contain \textit{three or more} requests in the session. This is to ensure there are multiple hits in the session, and to retrieve more meaningful patterns.
